@@ -5,6 +5,7 @@ import './index.css'
 import './home.css'
 import './login.css'
 import './repo.css'
+import './video.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

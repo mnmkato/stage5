@@ -5,6 +5,7 @@ import search from "../assets/search-normal.png"
 import vidFrame1 from "../assets/video frame.png"
 import link from "../assets/link.png"
 import more from "../assets/more.png"
+import { Link } from "react-router-dom"
 
 function Repo(params) {
     const data = [
@@ -12,12 +13,14 @@ function Repo(params) {
             category: "Recent Files",
             repos: [
                 {
+                    id:2,
                     img: "",
                     duration: "00:34",
                     title: "How to create Facebook Ad listing",
                     date: "SEPTEMBER 23, 2023"
                 },
                 {
+                    id:2,
                     img: "",
                     duration: "00:34",
                     title: "How to create Facebook Ad listing",
@@ -29,12 +32,14 @@ function Repo(params) {
             category: "Files from last week",
             repos: [
                 {
+                    id:3,
                     img: "",
                     duration: "00:34",
                     title: "How to create Facebook Ad listing",
                     date: "SEPTEMBER 23, 2023"
                 },
                 {
+                    id:4,
                     img: "",
                     duration: "00:34",
                     title: "How to create Facebook Ad listing",
@@ -67,7 +72,8 @@ function Repo(params) {
                         <h4 className="category-name">{category.category}</h4>
                         <div className="video-grid">
                             {category.repos.map((repo) => (
-                                <div className="video-grid-item" key={repo.title}>
+                                <Link to={`/video/${repo.id}`}>
+                                     <div className="video-grid-item" key={repo.title}>
                                     <div className="videoFrame">
                                         <img src={vidFrame1} alt="" />
                                         <span>{repo.duration}</span>
@@ -83,6 +89,8 @@ function Repo(params) {
                                         </div>
                                     </div>
                                 </div>
+                                </Link>
+                               
                             ))}
                         </div>
                     </div>
