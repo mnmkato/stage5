@@ -43,7 +43,9 @@ function Features() {
                         </p>
                         </div>
                     </div>
-                <img className="videoRepository" src={videoRepository} alt="" />
+                <div className="image-container videoRepository">
+                <img  src={videoRepository} alt="" />
+                </div>
             </div>
         </div>
         </>

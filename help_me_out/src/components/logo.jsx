@@ -5,7 +5,7 @@ function Logo() {
     <>
     <div className="logo">
     <img src={icon} alt="icon" />
-    <h3>HelpMeOut</h3>
+    <h3 className='logo-text'>HelpMeOut</h3>
     </div>
     </>
     )

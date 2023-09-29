@@ -14,12 +14,23 @@ function Hero() {
                 <a href="#" className="cta-button">Install HelpMeOut &rarr;</a>
             </div>
             <div className="image-grid">
-                <img src={gridleft} className="gridleft"/>
-                <img src={gridright} className="gridright"/>
-                <img src={img1} className="Image1" alt="Image 1"/>
-                <img src={img2} className="Image2" alt="Image 2"/>
-                <img src={img3} className="Image3" alt="Image 3"/>
+                <div className="image-container gridleft">
+                <img src={gridleft} className=""/>
+                </div>
+                <div className="image-container gridright">
+                <img src={gridright} className=""/>
+                </div>
+                <div className="image-container Image1">
+                <img src={img1} className="" alt="Image 1"/>
+                </div>
+                <div className="image-container Image2">
+                <img src={img2} className="" alt="Image 2"/>
+                </div>
+                <div className="image-container Image3">
+                <img src={img3} className="" alt="Image 3"/>
+                </div>
                 
+               
             </div>
         </div>
         </>
