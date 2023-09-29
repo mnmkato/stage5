@@ -1,0 +1,93 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+}
+.login-content>h1{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(20, 20, 20, 1);
+}
+.login-content>p{
+    width: 20rem;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    text-align: center;
+
+}
+.socialLogin{
+    width: 100%;
+    margin-bottom: 2rem;
+   border: 1px solid rgba(20, 20, 20, 1);
+   border-radius: 0.5rem;
+   display: flex;
+   justify-content: center;
+}
+.socialLogin>p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(20, 20, 20, 1);
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+.login-content form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login-content label{
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(20, 20, 20, 1);
+    margin-bottom: 0.5rem;
+}
+.login-content input{
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(182, 179, 198, 1);
+    outline: none;
+    background-color: #ffffff;
+}
+.login-content button{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(182, 179, 198, 1);
+    outline: none;
+    background-color: rgba(18, 11, 72, 1);
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(249, 249, 255, 1);
+}

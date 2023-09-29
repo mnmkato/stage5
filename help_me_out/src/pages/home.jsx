@@ -4,13 +4,16 @@ import Hero from "../components/hero"
 import Features from "../components/features"
 import Steps from "../components/steps"
 import Footer from "../components/footer"
+import { Link } from 'react-router-dom';
 function Home(params) {
     return(
         <>
         <header className="header">
             <Logo/>
             <HomeNav/>
-            <a className="get-started">Get Started</a>
+            <Link to="/login">
+            <div className="get-started">Get Started</div>
+            </Link>
         </header>
         <Hero/>
         <div className="divider" />
