@@ -71,7 +71,7 @@ function sendChunkToEndpoint(chunk) {
     .then(data => {
         if (data.recording_id) {
             console.log('Chunk sent successfully. Recording ID:', data.recording_id);
-            videoID = data,recording_id;
+            videoID = data.recording_id;
         } else {
             console.error('Error: Recording ID not found in the response.');
         }
