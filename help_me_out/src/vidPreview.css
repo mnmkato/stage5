@@ -1,0 +1,138 @@
+.vidPreview-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vidPreview-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 2rem;
+}
+.vidPreview-content h1{
+    font-family: Sora;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(20, 20, 20, 1);
+}
+.player{
+    border: 1px solid rgba(65, 60, 109, 1);
+    border-radius: 1rem;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.2);
+}
+.seekbar{
+        height: 5px;
+        background-color: black;
+}
+.player-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.player-controls>span{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(147, 147, 147, 1);
+
+}
+.player-controls-grid{
+    display: flex;
+    justify-content: space-between;
+}
+.player-controls-grid>div{
+    margin-right: 2rem;
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(20, 20, 20, 1);
+
+}
+.vidPreview-title>h3{
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(114, 114, 114, 1);
+
+}
+.vidPreview-title h1{
+    color: rgba(65, 60, 109, 1);
+    font-family: Sora;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.urlShare-title{
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(20, 20, 20, 1);
+}
+.banner{
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    width: 50rem;
+}
+
+.banner>h3{
+    font-family: Sora;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(20, 20, 20, 1);
+}
+
+.banner>button{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(249, 249, 255, 1);
+    background-color: rgba(18, 11, 72, 1);
+    padding: 1rem 2rem;
+    margin: 2rem;
+}
+.banner>p{
+    font-family: Sora;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(126, 126, 126, 1);
+}
+.banner>a{
+    font-family: Sora;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: rgba(18, 11, 72, 1);
+}

@@ -6,9 +6,7 @@ import edit from "../assets/edit.png"
 import copy from "../assets/copy.png"
 import vidFrame1 from "../assets/video frame.png"
 import fb from "../assets/fbShare.png"
-
 import whatsapp from "../assets/whatsapp.png"
-
 import telegram from "../assets/telegram.png"
 
 function Video() {

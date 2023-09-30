@@ -5,6 +5,7 @@ import Home from './pages/home';
 import Login from './pages/login';
 import Repo from './pages/repo';
 import Video from './pages/video';
+import VideoPreview from './pages/videoPreview';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/repo" element={<Repo/>} />
         <Route path="/video/:id" element={<Video/>} />
+        <Route path="/videoPreview" element={<VideoPreview/>} />
       </Routes>
     </HashRouter>
   )
