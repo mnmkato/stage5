@@ -8,33 +8,53 @@ import vidFrame1 from "../assets/video frame.png"
 import fb from "../assets/fbShare.png"
 import whatsapp from "../assets/whatsapp.png"
 import telegram from "../assets/telegram.png"
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 function Video() {
-    const video_data = {
-        path:["Recent Videos", "How To Create A Facebook Ad Listing"],
-        category:"Recent Videos",
-        title:"How To Create A Facebook Ad Listing",
-        Image:"",
-        duration:"0:34",
-        url:"https://www.helpmeout/Untitled_Video_20232509",
-        transcript:[
-            {
-                timestamp:"0.01",
-                text:'First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the'
-            },
-            {
-                timestamp:"0.15",
-                text:'First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the'
-            },{
-                timestamp:"0.30",
-                text:'First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the'
-            },
-            {
-                timestamp:"1.0",
-                text:'First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the'
-            },
-        ]
-    }
+
+    const {id} = useParams();  
+    const [video_data, setVideo] = useState({});
+  
+    useEffect(() => {
+      axios
+        .get(`https://example.com/video/${id}`, {
+          params: {
+            api_key: "",
+          },
+        })
+        .then((response) => {
+          setVideo(response.data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }, [id]);  
+    
+    // const video_data = {
+    //     category:"Recent Videos",
+    //     title:"How To Create A Facebook Ad Listing",
+    //     Image:"",
+    //     duration:"0:34",
+    //     url:"https://www.helpmeout/Untitled_Video_20232509",
+    //     transcript:[
+    //         {
+    //             timestamp:"0.01",
+    //             text:'First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the'
+    //         },
+    //         {
+    //             timestamp:"0.15",
+    //             text:'First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the'
+    //         },{
+    //             timestamp:"0.30",
+    //             text:'First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the'
+    //         },
+    //         {
+    //             timestamp:"1.0",
+    //             text:'First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the'
+    //         },
+    //     ]
+    // }
     return(
         <>
         <header className="repoHeader">

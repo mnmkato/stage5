@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <title>Help Me Out</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="icon.png" alt="icon" />
+            <h3 class='logo-text'>HelpMeOut</h3>
+        </div>
+        <div class="icons">
+            <img src="setting-2.png" alt="">
+            <img src="close-circle.png" alt="">
+        </div>
+    </header>
+    <p class="description">This extension helps you record and share help videos with ease.</p>
+    <div class="tabSelection">
+        <div>
+            <img src="monitor.png" alt="">
+            <p>Full Screen</p>
+        </div>
+        <div>
+            <img src="copy.svg" alt="">
+            <p>Current Tab<p>
+        </div>
+    </div>
+    <div class="camera selector">
+        <div>
+            <img src="video-camera.png" alt="">
+            <span>Camera</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="mic selector">
+        <div>
+            <img src="microphone.png" alt="">
+            <span>Audio</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <button id="startButton" >
+        Start Recording
+    </button>
+    <script src="popup.js"></script>
+</body>
+</html>

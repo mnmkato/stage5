@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@500&family=Sora:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap');
+body {
+    width: 300px;
+    display: grid;
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.logo-text {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    margin-left: 1rem;
+    color: var(--color2);
+}
+.description{
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.tabSelection{
+    display: flex;
+    justify-content: space-around;
+}
+.tabSelection>div{
+    text-align: center;
+}
+.tabSelection p{
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.selector{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(16, 10, 66, 1);
+}
+.selector>div{
+    display: flex;
+    align-items: center;
+}
+.selector img{
+    margin-right: 1rem;
+}
+.selector span{
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+button{
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: rgba(250, 253, 255, 1);
+    background-color: rgba(18, 11, 72, 1);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 1px solid rgba(18, 11, 72, 1);
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgba(18, 11, 72, 1);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px  rgba(18, 11, 72, 1);;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(34px);
+  }
+  
+  .slider.round {
+    border-radius: 0.9rem;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

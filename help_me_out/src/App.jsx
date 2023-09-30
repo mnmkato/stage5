@@ -15,7 +15,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/repo" element={<Repo/>} />
         <Route path="/video/:id" element={<Video/>} />
-        <Route path="/videoPreview" element={<VideoPreview/>} />
+        <Route path="/videoPreview/:id" element={<VideoPreview/>} />
       </Routes>
     </HashRouter>
   )
