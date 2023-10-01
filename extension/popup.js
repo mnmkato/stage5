@@ -32,15 +32,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log(response);
     
                     // Send a message to the content script to show the floating UI.
-                    chrome.tabs.sendMessage(tabs[0].id, { action: "show_floating_ui" }, function (response) {
-                        if (!chrome.runtime.lastError) {
-                            console.log('Floating UI request sent.');
-                        } else {
-                            console.log(chrome.runtime.lastError, 'error sending floating UI request');
-                        }
-                    });
+                    // chrome.tabs.sendMessage(tabs[0].id, { action: "show_floating_ui" }, function (response) {
+                    //     if (!chrome.runtime.lastError) {
+                    //         console.log('Floating UI request sent.');
+                    //     } else {
+                    //         console.log(chrome.runtime.lastError, 'error sending floating UI request');
+                    //     }
+                    // });
                 } else {
-                    console.log(chrome.runtime.lastError, 'error line 14');
+                    console.log(chrome.runtime.lastError, 'error');
                 }
             });
         });
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if(!chrome.runtime.lastError){
                     console.log(response)
                 } else{
-                    console.log(chrome.runtime.lastError, 'error line 27')
+                    console.log(chrome.runtime.lastError, 'error')
                 }
             })
         } )

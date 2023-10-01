@@ -8,12 +8,14 @@
     },
     "background": {
       "service_worker": "background.js"
-  },
+  }, 
     "permissions": [ 
       "scripting",
       "tabs",
       "activeTab",
     "desktopCapture",
+    "audioCapture",
+  "videoCapture",
     "storage"],
     "action": {
       "default_popup": "popup.html",
@@ -26,5 +28,19 @@
     },
     "host_permissions": [
       "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ 
+        "pause_ic.png",
+       "Avatar.png" ,
+        "rec.png",
+        "divider.svg",
+         "stop_ic.png",
+         "cam_ic.png",
+        "mic_ic.png",
+        "delete.png"],
+      "matches": [ "<all_urls>" ]
+    }
   ]
 }

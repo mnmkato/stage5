@@ -1,11 +1,8 @@
-import Logo from "../components/logo"
-import arrow from "../assets/arrow-down.png"
-import profile from "../assets/profile-circle.png"
-import search from "../assets/search-normal.png"
 import vidFrame1 from "../assets/video frame.png"
 import link from "../assets/link.png"
 import more from "../assets/more.png"
 import { Link } from "react-router-dom"
+import RepoHeader from "../components/repoHeader"
 
 function Repo(params) {
     const data = [
@@ -17,6 +14,7 @@ function Repo(params) {
                     img: "",
                     duration: "00:34",
                     title: "How to create Facebook Ad listing",
+                    category:"",
                     date: "SEPTEMBER 23, 2023"
                 },
                 {
@@ -50,22 +48,7 @@ function Repo(params) {
     ]
     return (
         <>
-            <header className="repoHeader">
-                <Logo />
-                <div className="nav-profile">
-                    <img src={profile} alt="" />
-                    <p>John Mark</p>
-                    <img src={arrow} alt="" />
-                </div>
-                <div className="salutation">
-                    <h1>Hello, John Mark</h1>
-                    <p>Here are your recorded videos</p>
-                </div>
-                <div className="searchBar">
-                    <img src={search} alt="" />
-                    <input type="search" name="search" id="search" placeholder="Search for a particular video" />
-                </div>
-            </header>
+        <RepoHeader/>
             <div className="repo-content">
                 {data.map((category) => (
                     <div className="repo-category" key={category.category}>
