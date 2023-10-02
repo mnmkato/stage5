@@ -19,7 +19,9 @@ Task 2 involves the development of a Chrome extension that records a user's scre
 
 ```bash
 git clone https://github.com/mnmkato/stage5.git  
+
 ```
+
 ### Installation Instructions
 
 To install the Chrome extension and test it in your browser, follow these steps:
