@@ -7,6 +7,7 @@ import './login.css'
 import './repo.css'
 import './video.css'
 import './vidPreview.css'
+import './popup.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

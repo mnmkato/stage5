@@ -2,7 +2,7 @@ import rec from "../assets/rec.svg"
 function Steps() {
     return(
         <>
-         <div className="steps">
+         <div id="steps" className="steps">
             <h3 className="section-heading">How it Works</h3>
             <div className="steps-grid">
                 <div className="step-item">

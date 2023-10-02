@@ -40,7 +40,7 @@ function onAccessGranted(cameraStream,screenStream){
             if (recordedBlob.size > 0) {
                 chunks.push(recordedBlob);
                 console.log("new chunk added to array")
-                //sendChunkToEndpoint(recordedBlob);
+                sendChunkToEndpoint(recordedBlob);
             }
             //downloadBlob(recordedBlob)
         }
@@ -85,12 +85,13 @@ function sendChunkToEndpoint(chunk) {
     const formData = new FormData();
     formData.append('recordingChunk', chunk);
 
-    fetch('https://example.com/upload', {
+    fetch('https://hng-ce-backend.onrender.com/api/upload', {
         method: 'POST',
         body: formData
     })
     .then(response => {
         if (response.ok) {
+            console.error('Rsponse OK:');
             return response.json();
         } else {
             console.error('Error sending chunk:', response.statusText);

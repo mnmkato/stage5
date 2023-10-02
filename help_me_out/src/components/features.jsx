@@ -6,7 +6,7 @@ import videoRepository from "../assets/Video Repository.png"
 function Features() {
     return(
         <>
-        <div className="features">
+        <div id='features' className="features">
             <h3 className="section-heading">Features</h3>
             <p>Key Highlights of Our Extension</p>
             <div className="features-content">

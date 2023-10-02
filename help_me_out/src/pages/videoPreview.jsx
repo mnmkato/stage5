@@ -12,6 +12,7 @@ import Footer from "../components/footer"
 import play from "../assets/play.png"
 import volume from "../assets/volume.png"
 import settings from "../assets/settings.png"
+import Popup from "./popup"
 
 
 function VideoPreview() {
@@ -60,7 +61,8 @@ function VideoPreview() {
                 </div>
                 <div className="emailShare">
                     <input type="email" name="email" id="email" placeholder="enter email of receiver"/>
-                    <button>Send</button>
+                    <button onClick={() => document.querySelector('.popup').style.display = 'flex'}>Send</button>
+                    <Popup/>
                 </div>
                 <h2 className="urlShare-title">Video URL</h2>
                 <div className="urlShare">
@@ -122,7 +124,7 @@ function VideoPreview() {
                         </div>
                         <div className="transcript-content">
                             {video_data.transcript.map(item => (
-                                <div>
+                                <div key={item.timestamp}>
                                     <div className="timestamp">{item.timestamp}</div>
                                     <div className="transcript-text">{item.text}</div>
                             </div>

@@ -17,6 +17,9 @@
 .topBar{
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 .topBar>h1{
     font-family: Sora;
@@ -25,8 +28,6 @@
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
     margin-right: 2rem;
     margin-left: 0;
 }
